@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Play Among the Stars</title>
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/record.css">
+  <link rel="stylesheet" href="./css/animations.css">
+</head>
+<body class="flex-center">
+
+
+  <div class="container flex-center">
+    <div class="outer-star"></div>
+    <div class="star inner-star flex-center">
+      <div class="sinatra flex-center">Frank Sinatra</div>
+      <div class="record-container flex-center">
+        <div class="record-border circle flex-center">
+          <div class="record-vinyl circle flex-center">
+            <div class="record-center-border circle flex-center">
+              <div class="record-center circle flex-center"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="record-arm"></div>
+    </div>
+    <div class="instructions"><p>Click the vinyl</p></div>
+    <div class="controls flex-center">
+      <button class="play-pause">||</button>
+      <button class="replay">⟲</button>
+    </div>
+  </div>
+
+  <audio data-track="1" src="./audio/needleDrop.mp3"></audio>
+  <audio data-track="2" src="./audio/flyMeToTheMoon.mp3"></audio>
+  <script src="main.js"></script>
+
+
+</body>
+</html>
