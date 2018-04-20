@@ -16,6 +16,8 @@ Every time I see this star on my way to work, I can't help but to hear one of hi
 
 https://nickarocho.github.io/play-among-the-stars/
 
+* Make sure your sound is on!
+
 #### Run the App Locally
 To run the app locally, clone this repo using the command line:
 
