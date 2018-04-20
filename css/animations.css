@@ -1,35 +1,35 @@
 @keyframes spinning{
-	from{
-		transform: rotate(0deg);
-		-moz-transform: rotate(0deg);
-		-webkit-transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-		-moz-transform: rotate(360deg);
-		-webkit-transform: rotate(360deg);
-	}
+  from{
+    transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
 }
 @-webkit-keyframes spinning {
-	from {
-		transform: rotate(0deg);
-		-moz-transform: rotate(0deg);
-		-webkit-transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-		-moz-transform: rotate(360deg);
-		-webkit-transform: rotate(360deg);
-	}
+  from {
+    transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 .spinning {
-	animation: spinning 4s linear infinite;
-	-moz-animation: spinning 4s linear infinite;
-	-webkit-animation: spinning 4s linear infinite;
-	transition: all 1s ease-in-out;
-	-moz-transition: all 1s ease-in-out;
-	-webkit-transition: all 1s ease-in-out;
+  animation: spinning 4s linear infinite;
+  -moz-animation: spinning 4s linear infinite;
+  -webkit-animation: spinning 4s linear infinite;
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
 }
 	
 .move-arm {
@@ -56,15 +56,15 @@
 
 .record-border {
   transition: all .2s ease-in-out;
-	-moz-transition: all .2s ease-in-out;
-	-webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
 }
 
 .record-border:hover { 
-	box-shadow: 0px 2px 44px #222528;
-	cursor: pointer;
+  box-shadow: 0px 2px 44px #222528;
+  cursor: pointer;
   transform: scale(1.1);
   transition: all .2s ease-in-out;
-	-moz-transition: all .2s ease-in-out;
-	-webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
 } 
