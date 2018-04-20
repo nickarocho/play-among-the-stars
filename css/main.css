@@ -38,7 +38,7 @@ body {
   font-family: 'Abel', sans-serif;
   color: white;
   font-size: 3.9vw;
-	text-transform: uppercase;
+  text-transform: uppercase;
   position: relative;
   top: 2vh;
   z-index: 1;
@@ -73,8 +73,8 @@ body {
   background-color: inherit;
   border: none;
   transition: all .2s ease-in-out;
-	-moz-transition: all .2s ease-in-out;
-	-webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
 }
 
 .controls > button:hover {
