@@ -64,7 +64,7 @@ I only had three hours to build this (which is cruel, because I was having a bla
   * While I feel I was as concise as possible while styling this, especially with utility classes for the many divs using `.flex-center {display: flex; align-content: center; justify-content: center}` and the `.circle: {border-radius: 50%}`, there are definitely ways I could use pseudo-classes and better nesting in the HTML to dry up / simplify the CSS
 * _**Simplify the JavaScript**_
   * I stuck with the methods I use the most for events and interactivity, but there are surely other more elegant ES6 features I could utilize to simplify the functions, which would in turn boost the performance
-  * There is probably a much more elegant way to achieve the timing that occurs from the `setTimeout`'s I'm using in the inital `play()` function.
+  * I chose to go with the `setTimeout` route for the animation/play sequence, but it would be cleaner and easier to alter timing with specific event listeners base on DOM Events like `transitionend` or `play` or `ended`, etc.
 * _**Add more interactivity**_
   * I would love to show the lyrics of the track beneath the star while the audio plays.
   * Maybe add a button that displays a modal pop up with Frank's bio.
