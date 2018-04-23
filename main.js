@@ -8,49 +8,38 @@ const playPause = document.querySelector('.play-pause');
 let isPlaying = false;
 
 /*--------- Functions ---------*/
-const handlePlay = (function() {
 
-  // Creating a closure, so this function can happen only once
-  let executed = false;
-  return function() {
-    if (!executed) {
-      executed = true;
-
-      // Initial Animations
-      document.querySelector('audio[data-track="1"').play();
-      recordArm.classList.add('move-arm');
-      recordBorder.style.pointerEvents = 'none';
-      instructions.classList.add('fade-out');
-
-      // Play sequence
-      setTimeout(function spinVinyl() {
-        vinyl.classList.add('spinning');
-      }, 2800);
-      setTimeout(function playSong() {
-        song.play();
-        instructions.innerHTML = "Enjoy.";
-        instructions.classList.remove('fade-out');
-        instructions.classList.add('fade-in');
-      }, 6000);
-      setTimeout(function addControls() {
-        instructions.classList.add('fade-out');
-        document.querySelector('.controls').classList.add('fade-in');
-      }, 9000);
-
-    }
-  };
-})();
+function handlePlay() {
+  // Initial Animations
+  recordArm.classList.add('move-arm');
+  recordBorder.style.pointerEvents = 'none';
+  instructions.classList.add('fade-out');
+  // Play sequence
+  document.querySelector('audio[data-track="1"').play();
+  setTimeout(function spinVinyl() {
+    vinyl.classList.add('spinning');
+  }, 2800);
+  setTimeout(function playSong() {
+    song.play();
+    instructions.innerHTML = "Enjoy.";
+    instructions.classList.remove('fade-out');
+    instructions.classList.add('fade-in');
+  }, 6000);
+  setTimeout(function addControls() {
+    instructions.classList.add('fade-out');
+    document.querySelector('.controls').classList.add('fade-in');
+  }, 9000);
+}
 
 function togglePlay() {
+  vinyl.classList.toggle('spinning');
   isPlaying = !isPlaying,
   isPlaying ? (
     song.pause(),
-    playPause.innerHTML = "▶︎",
-    vinyl.classList.remove('spinning')
+    playPause.innerHTML = "▶︎"
   ) : (
     song.play(),
-    playPause.innerHTML = "||",
-    vinyl.classList.add('spinning')
+    playPause.innerHTML = "||"
   )
 };
 
