@@ -1,5 +1,4 @@
 /*--------- Global Variables ---------*/
-const recordArm = document.querySelector('.record-arm');
 const vinyl = document.querySelector('.record-vinyl');
 const recordBorder = document.querySelector('.record-border');
 const instructions = document.querySelector('.instructions');
@@ -11,7 +10,7 @@ let isPlaying = false;
 
 function handlePlay() {
   // Initial Animations
-  recordArm.classList.add('move-arm');
+  document.querySelector('.record-arm').classList.add('move-arm');
   recordBorder.style.pointerEvents = 'none';
   instructions.classList.add('fade-out');
   // Play sequence
@@ -48,7 +47,7 @@ song.onended = function() {
 };
 
 /*--------- Event Listeners ---------*/
-recordBorder.addEventListener('click', handlePlay);
+recordBorder.addEventListener('click', handlePlay, {once: true});
 playPause.addEventListener('click', togglePlay);
 document.querySelector('.replay').addEventListener('click', function() {
   location.reload();
