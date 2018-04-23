@@ -10,6 +10,7 @@
     -webkit-transform: rotate(360deg);
   }
 }
+
 @-webkit-keyframes spinning {
   from {
     transform: rotate(0deg);
