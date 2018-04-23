@@ -27,7 +27,7 @@ function handlePlay() {
     instructions.classList.add('fade-out');
     document.querySelector('.controls').classList.add('fade-in');
   }, 9000);
-}
+};
 
 function togglePlay() {
   vinyl.classList.toggle('spinning');
