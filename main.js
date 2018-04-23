@@ -6,6 +6,7 @@ const song = document.querySelector('audio:nth-child(3)');
 const playPause = document.querySelector('.play-pause');
 let isPlaying = false;
 
+
 /*--------- Functions ---------*/
 function handlePlay() {
   console.log('works')
