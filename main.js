@@ -8,7 +8,6 @@ let isPlaying = false;
 
 /*--------- Functions ---------*/
 function handlePlay() {
-  console.log('works')
   // Initial Animations
   document.querySelector('.record-arm').classList.add('move-arm');
   recordBorder.style.pointerEvents = 'none';
