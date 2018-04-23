@@ -2,18 +2,19 @@
 const vinyl = document.querySelector('.record-vinyl');
 const recordBorder = document.querySelector('.record-border');
 const instructions = document.querySelector('.instructions');
-const song = document.querySelector('audio[data-track="2"');
+const song = document.querySelector('audio:nth-child(3)');
 const playPause = document.querySelector('.play-pause');
 let isPlaying = false;
 
 /*--------- Functions ---------*/
 function handlePlay() {
+  console.log('works')
   // Initial Animations
   document.querySelector('.record-arm').classList.add('move-arm');
   recordBorder.style.pointerEvents = 'none';
   instructions.classList.add('fade-out');
   // Play sequence
-  document.querySelector('audio[data-track="1"').play();
+  document.querySelector('audio:nth-child(2)').play();
   setTimeout(function spinVinyl() {
     vinyl.classList.add('spinning');
   }, 2800);
