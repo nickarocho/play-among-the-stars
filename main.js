@@ -7,7 +7,6 @@ const playPause = document.querySelector('.play-pause');
 let isPlaying = false;
 
 /*--------- Functions ---------*/
-
 function handlePlay() {
   // Initial Animations
   document.querySelector('.record-arm').classList.add('move-arm');
