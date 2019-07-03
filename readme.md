@@ -1,6 +1,6 @@
 # Play Among the Stars
 
-This is the final result of a 3-hour creative coding interview. The prompt
+This is the final result of a 3-hour creative coding interview. The prompt was to "pick an object in the real world which speaks to you and bring it to life using HTML, CSS, and JavaScript".
  
 ![Comparison](https://i.imgur.com/E9H2F8P.jpg)
 
