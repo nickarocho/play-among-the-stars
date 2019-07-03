@@ -1,4 +1,6 @@
 # Play Among the Stars
+
+This is the final result of a 3-hour creative coding interview. The prompt
  
 ![Comparison](https://i.imgur.com/E9H2F8P.jpg)
 
@@ -38,6 +40,8 @@ Open the `index.html` file using Google Chrome or Firefox.
 I only had three hours to build this (which is cruel, because I was having a blast working on this and just want to keep going by adding more features and perfecting the rendering), so needeless to say, there are some definite improvements that can be made in the form of: more features, bug fixes, performance and responsiveness.
 
 ### Here's what I would do next:
+* _**Fix the animation timing chain approach**_
+  * Since I was under the gun with time, I used a sloppy `setTimeout` approach, which isn't good. I would rework this to fire the animation chain synchronously.
 * _**Add more tracks**_
   * I originally wanted to be able to click on a certain letter of his name which would respectively play a tune that starts with that letter (i.e. 'S' would trigger 'Summerwind')
   * Add two more controls that would play the next or previous tune
