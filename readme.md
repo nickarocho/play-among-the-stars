@@ -12,13 +12,14 @@ I pass by dozens of these iconic stars every day, but my favorite by far goes to
 
 Every time I see this star on my way to work, I can't help but to hear one of his many tunes in my head, so I thought it would be a fun project to express my perspective of this object by bringing it to life and recreating it in the form of good ol' HTML, CSS and JavaScript.
 
-## Getting Started
+## Check It Out
 
-#### View the Deployed App:
+#### View the Project:
 
 https://nickarocho.github.io/play-among-the-stars/
 
 * Make sure your sound is on!
+* Also, this looks best on a laptop.
 
 #### Run the App Locally
 To run the app locally, clone this repo using the command line:
