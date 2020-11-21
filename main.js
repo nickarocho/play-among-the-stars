@@ -4,7 +4,13 @@ const recordBorder = document.querySelector('.record-border');
 const instructions = document.querySelector('.instructions');
 const song = document.querySelector('audio:nth-child(3)');
 const playPause = document.querySelector('.play-pause');
+
 let isPlaying = false;
+const ANIMATION_TIMING = {
+  first: 2800,
+  second: 6000,
+  third: 9000,
+};
 
 /*--------- Functions ---------*/
 function handlePlay() {
@@ -16,17 +22,17 @@ function handlePlay() {
   document.querySelector('audio:nth-child(2)').play();
   setTimeout(function spinVinyl() {
     vinyl.classList.add('spinning');
-  }, 2800);
+  }, ANIMATION_TIMING.first);
   setTimeout(function playSong() {
     song.play();
     instructions.innerHTML = "Enjoy.";
     instructions.classList.remove('fade-out');
     instructions.classList.add('fade-in');
-  }, 6000);
+  }, ANIMATION_TIMING.second);
   setTimeout(function addControls() {
     instructions.classList.add('fade-out');
     document.querySelector('.controls').classList.add('fade-in');
-  }, 9000);
+  }, ANIMATION_TIMING.third);
 };
 
 function togglePlay() {
